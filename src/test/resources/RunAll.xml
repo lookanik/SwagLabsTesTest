@@ -1,0 +1,37 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test All" parallel="none" >
+
+    <test name="Log In Valid Credentials">
+        <classes>
+            <class name="FullAuto.LogIn.ValidUsername"/>
+        </classes>
+    </test>
+
+    <test name="Sorting">
+        <classes>
+            <class name="FullAuto.LogIn.PLP_sorting"/>
+        </classes>
+    </test>
+
+    <test name="Log out">
+        <classes>
+            <class name="FullAuto.LogIn.UserLogout"/>
+        </classes>
+    </test>
+
+    <test name="Empty Username Login">
+        <classes>
+            <class name="FullAuto.LogIn.EmptyUsername"/>
+        </classes>
+    </test>
+
+    <test name="Product Checkout">
+        <classes>
+            <class name="FullAuto.LogIn.CheckoutProduct"/>
+        </classes>
+    </test>
+
+</suite>
+

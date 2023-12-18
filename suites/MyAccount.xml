@@ -1,0 +1,11 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="My Account">
+
+    <test name="PLP Sorting Test">
+        <classes>
+            <class name="swag.lab.test.PLPSorting"/>
+        </classes>
+    </test>
+</suite>

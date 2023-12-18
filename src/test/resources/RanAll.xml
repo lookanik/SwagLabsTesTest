@@ -1,0 +1,21 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test All" parallel="none" >
+
+    <test name="Log In Valid Credentials">
+        <classes>
+            <class name="swag.lab.test.log_in.LogInLogOutTest"/>
+        </classes>
+    </test>
+
+    <test name="Sorting">
+        <classes>
+            <class name="swag.lab.test.plp.PLPSorting"/>
+        </classes>
+    </test>
+
+</suite>
+
+
+<!-- mvn test -Dsurefire.suiteXmlFiles=src/test/resources/RanAll.xml -->

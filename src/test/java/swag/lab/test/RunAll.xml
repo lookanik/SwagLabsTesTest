@@ -1,0 +1,18 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SMOKE Test">
+
+    <test name="Log In Valid Credentials">
+        <classes>
+            <class name="swag.lab.test.LogIn"/>
+        </classes>
+    </test>
+
+    <test name="Log In Empty User Name Filed">
+        <classes>
+            <class name="swag.lab.test.LogInEmptyUserNameFiled"/>
+        </classes>
+    </test>
+
+</suite>

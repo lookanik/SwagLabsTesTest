@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Tools QA tEST aLL" parallel="none" >
+
+    <test name="Log In Valid Credentials">
+        <classes>
+            <class name="tools.qa.LogInTest"/>
+        </classes>
+    </test>
+
+</suite>
+
+
+
+        <!-- mvn test -Dsurefire.suiteXmlFiles=src/test/resources/RunToolsQa.xml -->
