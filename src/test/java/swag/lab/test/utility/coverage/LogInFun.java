@@ -1,12 +1,11 @@
 package swag.lab.test.utility.coverage;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import swag.lab.test.utility.jsonFilesParser.JSONManagement;
 import swag.lab.test.utility.page_object.LogInPageObject;
-import swag.lab.test.utility.page_object.MenuOption;
+import swag.lab.test.utility.page_object.MenuOptionPageObject;
 import swag.lab.test.utility.page_object.ProductListingPage;
 
 import java.io.IOException;
@@ -33,8 +32,8 @@ public class LogInFun {
 
     public static void logOutAccount (WebDriver driver, WebDriverWait wait){
 
-        driver.findElement(MenuOption.menu).click();
-        driver.findElement(MenuOption.logOut).click();
+        driver.findElement(MenuOptionPageObject.menu).click();
+        driver.findElement(MenuOptionPageObject.logOut).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(LogInPageObject.logInButton));
 
 

@@ -12,9 +12,6 @@ public class BaseClass {
 
     public static WebDriver driver;
     ChromeOptions options = new ChromeOptions();
-
-
-
     //luka
     @BeforeSuite
     public void initializeWebDriver() throws IOException {
