@@ -6,6 +6,8 @@ public class QaToolsLoginPage extends BaseClass {
     By userName = By.id("userName");
     By password = By.id("password");
     By logInButton = By.id("login");
+    //asdasdasdaksdaskdh
+    //ASasASasASas
 
     public void typeUsername () throws InterruptedException {
         driver.findElement(userName).sendKeys("testthebest");
