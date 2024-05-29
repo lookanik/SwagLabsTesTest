@@ -8,4 +8,11 @@
             <class name="swag.lab.test.PLPSorting"/>
         </classes>
     </test>
+
+    <test name="Log In Valid Acc">
+        <classes>
+            <class name="swag.lab.test.LogInTest"/>
+        </classes>
+    </test>
+
 </suite>

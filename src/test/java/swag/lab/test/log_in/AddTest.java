@@ -27,6 +27,7 @@ public class AddTest {
     driver.manage().window().setSize(new Dimension(1616, 876));
     driver.findElement(By.cssSelector(".button")).click();
     assertThat(driver.findElement(By.xpath("user-name")).getText(), is("What's New"));
+    
   }
 
   @After

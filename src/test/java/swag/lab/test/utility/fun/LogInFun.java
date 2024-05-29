@@ -12,13 +12,20 @@ import java.io.IOException;
 
 public class LogInFun {
 
-    public static void logInValidAccount (WebDriver driver, WebDriverWait wait) throws IOException {
-
+    public static void logInValidAccount (WebDriver driver,
+                                          WebDriverWait wait) throws IOException {
 
         driver.findElement(LogInPage.userNameField).sendKeys(JSONManagement.readProperty("standardUser"));
         driver.findElement(LogInPage.passwordField).sendKeys(JSONManagement.readProperty("password"));
         driver.findElement(LogInPage.logInButton).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(ProductListingPage.productTitle));
+
+    }
+
+    public static void logOutFun
+            (WebDriver driver, WebDriverWait wait) throws IOException {
+
+
 
     }
 

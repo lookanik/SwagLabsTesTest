@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import swag.lab.test.page_object.LogInPage;
-import swag.lab.test.page_object.ProductListingPage;
+import swag.lab.test.page_object.ProductListingPageObject;
 
 public class LogInFun {
 
@@ -13,7 +13,7 @@ public class LogInFun {
         driver.findElement(LogInPage.userNameField).sendKeys(LogInPage.validUser);
         driver.findElement(LogInPage.passwordField).sendKeys(LogInPage.userPassword);
         driver.findElement(LogInPage.logInButton).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(ProductListingPage.productsHeaderText));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(ProductListingPageObject.firstProductFromList));
 
     }
 }

@@ -5,7 +5,7 @@
 
     <test name="Log In Valid Credentials">
         <classes>
-            <class name="swag.lab.test.LogIn"/>
+            <class name="swag.lab.test.LogInValidAccountTest"/>
         </classes>
     </test>
 
